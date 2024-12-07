@@ -1,23 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Presentasi PKL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-indigo-600 text-white p-4 fixed w-full z-10">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-xl font-bold">Presentasi PKL</h1>
+        <nav>
+          <ul class="flex space-x-4">
+            <li>
+              <a href="#pendahuluan" class="hover:underline">Pendahuluan</a>
+            </li>
+            <li>
+              <a href="#sejarah" class="hover:underline">Sejarah Kantor</a>
+            </li>
+            <li><a href="#kegiatan" class="hover:underline">Kegiatan</a></li>
+            <li>
+              <a href="#hasil" class="hover:underline">Hasil & Manfaat</a>
+            </li>
+            <li>
+              <a href="#kesimpulan" class="hover:underline">Kesimpulan</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Pendahuluan -->
+    <section id="pendahuluan" class="pt-20 pb-12 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-4">Pendahuluan</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Pendahuluan membahas tujuan dan latar belakang pelaksanaan PKL. Pada
+          bagian ini dijelaskan mengapa PKL dilakukan dan manfaatnya bagi siswa.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sejarah Kantor -->
+    <section id="sejarah" class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-4">Sejarah Kantor</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Bagian ini menjelaskan sejarah singkat kantor atau tempat PKL,
+          termasuk visi, misi, dan perkembangannya hingga saat ini.
+        </p>
+      </div>
+    </section>
+
+    <!-- Kegiatan Selama PKL -->
+    <section id="kegiatan" class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-8 text-center">Kegiatan Selama PKL</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Kegiatan 1 -->
+          <div class="flex items-center">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Kegiatan 1"
+              class="w-36 h-36 object-cover rounded-md shadow-md"
+            />
+            <div class="ml-6">
+              <h3 class="text-xl font-semibold mb-2">Pengelolaan Dokumen</h3>
+              <p class="text-gray-700">
+                Selama PKL, saya membantu pengelolaan dokumen, seperti menyusun
+                laporan, memindai arsip, dan mengorganisasi data digital.
+              </p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 2 -->
+          <div class="flex items-center">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Kegiatan 2"
+              class="w-36 h-36 object-cover rounded-md shadow-md"
+            />
+            <div class="ml-6">
+              <h3 class="text-xl font-semibold mb-2">Penggunaan Software</h3>
+              <p class="text-gray-700">
+                Saya belajar menggunakan software untuk membantu proses
+                administrasi, seperti Microsoft Excel, Word, dan sistem
+                manajemen kantor.
+              </p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 3 -->
+          <div class="flex items-center">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Kegiatan 3"
+              class="w-36 h-36 object-cover rounded-md shadow-md"
+            />
+            <div class="ml-6">
+              <h3 class="text-xl font-semibold mb-2">Kerja Sama Tim</h3>
+              <p class="text-gray-700">
+                Saya berinteraksi dengan staf dan rekan kerja untuk
+                menyelesaikan tugas bersama, meningkatkan kemampuan komunikasi
+                dan kolaborasi.
+              </p>
+            </div>
+          </div>
+
+          <!-- Kegiatan 4 -->
+          <div class="flex items-center">
+            <img
+              src="https://via.placeholder.com/150"
+              alt="Kegiatan 4"
+              class="w-36 h-36 object-cover rounded-md shadow-md"
+            />
+            <div class="ml-6">
+              <h3 class="text-xl font-semibold mb-2">
+                Presentasi dan Dokumentasi
+              </h3>
+              <p class="text-gray-700">
+                Saya membuat dokumentasi kegiatan harian dan menyusun laporan
+                akhir untuk dipresentasikan di depan pembimbing dan rekan kerja.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hasil dan Manfaat -->
+    <section id="hasil" class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-4">Hasil & Manfaat</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Bagian ini merangkum hasil yang dicapai selama PKL, seperti
+          peningkatan skill atau kontribusi terhadap pekerjaan kantor. Selain
+          itu, dijelaskan manfaat yang dirasakan oleh siswa.
+        </p>
+      </div>
+    </section>
+
+    <!-- Kesimpulan -->
+    <section id="kesimpulan" class="py-12 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-4">Kesimpulan</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Kesimpulan berisi ringkasan dari pengalaman PKL, pencapaian, serta
+          saran untuk program PKL di masa depan.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-600 text-white text-center py-4">
+      <p>&copy; 2024 Presentasi PKL | Dibuat dengan Tailwind CSS</p>
+    </footer>
   </body>
 </html>
